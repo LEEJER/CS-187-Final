@@ -2,6 +2,10 @@
     --main-bg-color: #393c4d;
     --main-text-color: #fff;
     --nav-bg-color: #0a0d12;
+    --img-bg-color: #2e3142;
+    --highlight: #60d8f0;
+/*    --highlight: #42c8e3;*/
+    --highlight2: #3bb4cc;
 }
 *{
     color: var(--main-text-color);
@@ -31,6 +35,7 @@ nav{
 nav{
     position: sticky;
     position: -webkit-sticky;
+    box-shadow: 0 0 2rem 0 #000;
 }
 nav ul{
     margin: 0;
@@ -46,18 +51,19 @@ nav ul li a{
     text-decoration: none;
     text-align: center;
     display: block;
-    width:8rem;
     height:5rem;
     margin: 0;
     line-height: 5rem;
-    padding:0;
+    padding:0 2rem;
     transition: background-color 0.5s;
+    transition: padding 0.5s;
     float: left;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 }
 nav ul li a:hover{
     background-color: #202b3d;
     color: #eee;
+    padding: 0 3rem;
 }
 .nav-right{
     float: right;
@@ -77,7 +83,7 @@ header{
 }
 .logo{
     font-family: 'Oswald', sans-serif;
-    font-size: 6rem;
+    font-size: 8rem;
     margin: 0;
     line-height: 15rem;
     color: white;
@@ -92,5 +98,65 @@ section{
 }
 section h1{
     font-family: 'Oswald';
-    font-size: 2rem;
+    font-size: 5rem;
+    margin-bottom: 0;
+}
+section p{
+    line-height: 2rem;
+    font-size: 1.75rem;
+}
+.line{
+    background-color: white;
+    display: block;
+    height:0.5rem;
+    width:50%;
+}
+#two-column-home{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        'p img'
+        'p desc';
+    grid-gap: 1rem; 
+    
+}
+section img{
+    background-color: var(--img-bg-color);
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0.1rem 0.1rem 1rem #000;
+}
+/*
+
+SCROLL BAR
+
+*/
+::-webkit-scrollbar{
+    width:10px;
+}
+::-webkit-scrollbar-track{
+    background-color: #111113;
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--highlight);
+    border-radius: 5px;
+    transition: 0.5s;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: var(--highlight2);
+}
+/*
+
+SELECTION
+
+*/
+::-moz-selection {
+    background-color: var(--highlight);
+    color: #000;
+}
+::selection{
+    background-color: var(--highlight);
+    color: #000;
 }
