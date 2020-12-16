@@ -17,6 +17,7 @@ body{
     margin: 0;
     background-color: var(--main-bg-color);
     color:var(--main-text-color);
+    min-height: 1vh;
 }
 /* 
 
@@ -41,7 +42,6 @@ nav ul{
     margin: 0;
     list-style: none;
     padding: 0;
-    width: 1w;
 }
 nav ul li{
     margin: 0;
@@ -64,6 +64,10 @@ nav ul li a:hover{
     background-color: #202b3d;
     color: #eee;
     padding: 0 3rem;
+}
+nav ul li a:active{
+    padding:0 2rem;
+    transition: padding 0.1s;
 }
 .nav-right{
     float: right;
@@ -128,6 +132,13 @@ section img{
     margin-right: auto;
     box-shadow: 0.1rem 0.1rem 1rem #000;
 }
+.two-column{
+    display:grid;
+    width: 100%;
+    grid-template-columns: 50% 50%;
+    line-height: 2rem;
+    font-size: 1.75rem;
+}
 /*
 
 SCROLL BAR
@@ -159,4 +170,19 @@ SELECTION
 ::selection{
     background-color: var(--highlight);
     color: #000;
+}
+/*
+
+Other
+
+*/
+.s-text{
+    line-height: 2rem;
+    font-size: 1.75rem;
+}
+footer{
+    text-align: center;
+    line-height: 3rem;
+    color: #99999f;
+    bottom: 0;
 }
