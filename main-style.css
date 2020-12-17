@@ -186,3 +186,6 @@ footer{
     color: #99999f;
     bottom: 0;
 }
+html{
+    scroll-behavior: smooth;
+}
