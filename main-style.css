@@ -85,12 +85,14 @@ header{
     background-color: black;
     text-align: center;
 }
-.logo{
+.logo, .logo a{
     font-family: 'Oswald', sans-serif;
     font-size: 8rem;
     margin: 0;
     line-height: 15rem;
     color: white;
+    user-select: none;
+    text-decoration: none;
 }
 /*
 
@@ -106,7 +108,7 @@ section h1{
     margin-bottom: 0;
 }
 section p{
-    line-height: 2rem;
+    line-height: 2.5rem;
     font-size: 1.75rem;
 }
 .line{
@@ -177,7 +179,7 @@ Other
 
 */
 .s-text, .s-text *{
-    line-height: 2rem;
+    line-height: 2.5rem;
     font-size: 1.75rem;
 }
 footer{
@@ -193,4 +195,12 @@ section h2{
     font-size: 3rem;
     line-height: 2rem;
     font-weight: 400;
+}
+a, img{
+    user-drag: none; 
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 }
