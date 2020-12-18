@@ -176,7 +176,7 @@ SELECTION
 Other
 
 */
-.s-text{
+.s-text, .s-text *{
     line-height: 2rem;
     font-size: 1.75rem;
 }
@@ -188,4 +188,9 @@ footer{
 }
 html{
     scroll-behavior: smooth;
+}
+section h2{
+    font-size: 3rem;
+    line-height: 2rem;
+    font-weight: 400;
 }
