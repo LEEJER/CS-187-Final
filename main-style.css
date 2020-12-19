@@ -1,11 +1,14 @@
 :root{
     --main-bg-color: #393c4d;
+    --main2: #020314;
     --main-text-color: #fff;
     --nav-bg-color: #0a0d12;
     --img-bg-color: #2e3142;
-    --highlight: #60d8f0;
+    --highlight: #515ab8;
+/*    --highlight: #60d8f0;*/
 /*    --highlight: #42c8e3;*/
-    --highlight2: #3bb4cc;
+    --highlight2: #3f468f;
+    --highlight3: #5c83ed;
 }
 *{
     color: var(--main-text-color);
@@ -15,7 +18,8 @@
 }
 body{
     margin: 0;
-    background-color: var(--main-bg-color);
+/*    background-color: var(--main-bg-color);*/
+    background-image: linear-gradient(180deg, var(--main-bg-color), var(--main2));
     color:var(--main-text-color);
     min-height: 1vh;
 }
@@ -82,7 +86,8 @@ header{
     height:15rem;
     font-size: 4rem;
     margin: 0;
-    background-color: black;
+/*    background-color: black;*/
+    background-image: linear-gradient(0deg, black, #112);
     text-align: center;
 }
 .logo, .logo a{
@@ -166,12 +171,12 @@ SELECTION
 
 */
 ::-moz-selection {
-    background-color: var(--highlight);
-    color: #000;
+    background-color: var(--highlight3);
+/*    color: #000;*/
 }
 ::selection{
-    background-color: var(--highlight);
-    color: #000;
+    background-color: var(--highlight3);
+/*    color: #000;*/
 }
 /*
 
